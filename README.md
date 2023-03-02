@@ -8,7 +8,7 @@
 
 ## Unified Modeling Language: 
 
-![Capture](https://github.com/crisgahur/Kiadealership/blob/develop/UML.jpg)
+![Capture](https://github.com/crisgahur/Kiadealership/blob/develop/UML.png)
 
 ## Status 
 In review for the manager. Last update 03/02/2023. No bugs detected.
