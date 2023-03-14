@@ -34,6 +34,17 @@ VALUE ('Sportage');
 INSERT INTO sell (id_car, id_employee, price, date_sell)
 VALUE (1, 1, 80000000, '2024-03-01');
 
-CALL sp_show_sells_employee1();
-CALL sp_showSells();
-CALL sp_insert_new_
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_insert_new_car`(in name_new_car varchar(50))
+INSERT INTO car(name_car)
+values(name_new_car);
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_insert_new_employee`(in name_new_employee varchar(50))
+INSERT INTO employee(name_employee)
+values(name_new_employee);
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_show_employees`()
+SELECT * FROM EMPLOYEE;
+
+CALL sp_insert_new_car("Picanto");
+CALL sp_insert_new_car("Cristian");
+CALL sp_show_employees();
